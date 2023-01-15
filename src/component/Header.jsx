@@ -67,7 +67,7 @@ export default function Header()
     <nav className='p-3'>
       <div className='container'>
       <div className='row'>
-        <div className='col-md-4 col-xs-6 position-relative' onClick={()=>{setisopen(true)}}><span style={{fontSize:'30px'}}>{<BsFillCartFill />}</span><span className='position-absolute top-10 start-15 translate-middle badge rounded-pill bg-secondary'>{cartItem.length > 0 ? cartItem.length : "0"}</span></div>
+        <div className='col-md-4 col-xs-6 position-relative' onClick={()=>{setisopen(true)}}><span style={{fontSize:'30px'}}>{<BsFillCartFill />}</span><span className='position-absolute top-10 start-15 translate-middle badge rounded-pill bg-secondary'>{cartItem.length>0?cartItem.length:0}</span></div>
         <section className='minicart p-3' style={{display:isopen ? "block" : "none",maxWidth:'350px'}}>
           <div onClick={()=>{setisopen(!isopen)}} className='p-2 text-right d-flex justify-content-end position-absolute top-0 end-0'>{<BsXLg />}</div>
             { cartItem.length > 0 &&

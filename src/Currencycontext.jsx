@@ -4,13 +4,20 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 const Currency = createContext();
 
 const CurrencytoContext = ({ children }) => {
-  let localcart = JSON.parse(localStorage.getItem('cartitem'))
+  // let localcart = JSON.parse(localStorage.getItem('cartitem'))
+  let cartdata = [];
+  if(localStorage.getItem('cartitem'))
+  {let localcart = JSON.parse(localStorage.getItem('cartitem'))
+   cartdata = localcart;
+  }
+ 
   const [currency, setCurrency] = useState("INR");
   const [symbol, setSymbol] = useState("₹");
   const [catLists,setCatLists] = useState([]);
-  const [cartItem,setCartItem] = useState(localcart);
-
+  const [cartItem,setCartItem] = useState(cartdata);
   localStorage.setItem("cartitem", JSON.stringify(cartItem));
+
+ 
   
 
   useEffect(() => {
