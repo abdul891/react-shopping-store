@@ -36,3 +36,115 @@
     transform: rotate(360deg);
   }
 }
+.TodoList{
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 30px;
+    background: #e8e6e6;
+    box-shadow: 4px 0px 10px 2px grey;
+
+}
+.TodoList h1{
+  text-align: center;
+  color: red;
+}
+.minicart{
+  position: absolute;
+    top: 65px;
+    max-width: 350px;
+    background:#fbfbfb;
+    z-index: 55;
+    padding: 15px;
+    box-shadow: 5px 5px 15px #ffff;
+    list-style: none;
+    list-style-type: none;
+    border: 1px solid;
+}
+.minicart ul{
+padding: 0px;
+margin: 0px;
+list-style-type: none;
+}
+.minicart li{
+  padding: 10px 0px;
+  border-bottom: 1px solid black;
+}
+.Total-mini-cart
+{
+  background: #cfcfcf;
+  padding: 8px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+a{
+  text-decoration: none;
+}
+.top-nav-bar a{
+text-decoration: none !important;
+color: #000;
+font-weight: 600;
+margin: 0px 10px;
+}
+.prod-card
+{
+  box-shadow: 0 1px 3px 2px rgb(0 0 0 / 10%), 0 1px 2px 2px rgb(0 0 0 / 6%);
+    border: 2px solid transparent !important;
+    border-radius: 10px;
+}
+.list-group-item.active{
+  background: black !important;
+}
+.searchfilter-sec{
+  
+  max-width: 100%;
+  width: 100%;
+  z-index: 222;
+  max-height: 250px;
+  overflow-y: scroll;
+  background-color: #fbfbfb;
+  box-shadow: 5px 5px 15px #ffff;
+}
+.searchfilter-sec ul {
+  padding: 0px;
+  list-style-type: none;
+}
+.authform{
+  max-width: 600px;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+
+  box-shadow: 5px 5px 15px #eaeaea;
+ 
+}
+.authform input{
+  border-radius: 0px;
+  border-bottom: 2px solid;
+}
+.err-msg
+{
+  color: red;
+}
+body{
+  font-family: 'Oswald', sans-serif !important;
+}
+@media screen and (max-width: 992px) and (min-width: 576px) {
+
+  .container, .container-sm {
+    max-width: 900px !important;
+    width: calc(100% - 20px) !important;
+    margin:  0 auto;
+  }
+}
